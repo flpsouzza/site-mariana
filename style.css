@@ -278,3 +278,12 @@ article.post.split{align-items:start}
   .top .fontbtn{padding:9px 13px;min-height:46px;font-size:1rem}
   .fb-l{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 }
+
+/* sobre: "Um pouco de mim" */
+.hobbies{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.hobbies li{display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start;padding:18px 0;border-top:1px solid color-mix(in srgb,var(--olive-900) 15%,transparent)}
+.hobbies li:last-child{border-bottom:1px solid color-mix(in srgb,var(--olive-900) 15%,transparent)}
+.hobbies svg{width:44px;height:44px;padding:9px;border-radius:50%;background:var(--lav-200);color:var(--lav-ink)}
+.hobbies h3{font-size:1.15rem;margin-bottom:4px}
+.hobbies p{color:var(--ink-2)}
+.prose .lang{font:500 .95rem var(--display);color:var(--olive-700)}
