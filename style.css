@@ -253,3 +253,28 @@ article.post.split{align-items:start}
   .brand span{font-size:.6rem;letter-spacing:.2em}
   .menubtn{padding:10px 18px;min-height:46px}
 }
+
+/* ---------- v3.1 · legibilidade (10/10/2026) ---------- */
+/* rótulos em maiúsculas: mínimo ~12,5px e espaçamento menor */
+.kicker{font-size:.84rem;letter-spacing:.2em}
+.band small,.card .tag,.feature .tag{font-size:.8rem;letter-spacing:.16em}
+.visual .badge small{font-size:.78rem;letter-spacing:.16em}
+.quote cite{font-size:.86rem;letter-spacing:.18em}
+.pslot{font-size:.84rem}
+.brand span{font-size:.74rem;letter-spacing:.24em}
+.creds{font-size:1rem}
+/* botão A+ fica no topo, fora do menu */
+.top .fontbtn{order:3;margin-left:6px}
+.top .nav{order:2}
+.top .menubtn{order:4}
+.fb-a{font-weight:600}
+@media (max-width:1180px){
+  .top .fontbtn{margin:0 0 0 auto;align-self:center}
+  .top .menubtn{margin-left:0}
+}
+@media (max-width:560px){
+  .brand b{font-size:.9rem;letter-spacing:.14em}
+  .brand span{font-size:.68rem;letter-spacing:.16em}
+  .top .fontbtn{padding:9px 13px;min-height:46px;font-size:1rem}
+  .fb-l{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+}

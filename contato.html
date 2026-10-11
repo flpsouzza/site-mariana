@@ -7,6 +7,19 @@
 <meta name="description" content="Fale com a fisioterapeuta Mariana Soares pelo WhatsApp, e-mail ou Instagram.">
 <meta name="robots" content="noindex,nofollow">
 <meta name="theme-color" content="#2F3A2A">
+<link rel="canonical" href="https://mariana.csouzza.com/contato.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Mariana Soares · Fisioterapia">
+<meta property="og:title" content="Contato · Mariana Soares, Fisioterapeuta">
+<meta property="og:description" content="Fale com a fisioterapeuta Mariana Soares pelo WhatsApp, e-mail ou Instagram.">
+<meta property="og:url" content="https://mariana.csouzza.com/contato.html">
+<meta property="og:image" content="https://mariana.csouzza.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo MS de Mariana Soares: Fisioterapia pélvica e saúde da mulher, atendimento em casa no Rio de Janeiro">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Contato · Mariana Soares, Fisioterapeuta","url":"https://mariana.csouzza.com/contato.html","about":{"@id":"https://mariana.csouzza.com/#mariana"}}</script>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,9 +45,9 @@ if(first){r.classList.add("intro");document.addEventListener("DOMContentLoaded",
 <header class="top">
   <div class="wrap">
     <a class="brand" href="index.html" aria-label="Mariana Soares, Fisioterapia. Página inicial"><svg class="" viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="88" fill="none" stroke="#6B5A94" stroke-width="2.2"/><text x="100" y="123" text-anchor="middle" font-family="Italiana, serif" font-size="78" letter-spacing="2" fill="#1F241B">MS</text><path d="M62 142h76" stroke="#6B5A94" stroke-width="2.2"/></svg><div><b>Mariana Soares</b><span>Fisioterapia pélvica</span></div></a>
+    <button class="fontbtn" id="fontbtn" aria-pressed="false" aria-label="Letra maior" title="Aumentar o tamanho das letras"><span class="fb-a">A+</span><span class="fb-l"> Letra maior</span></button>
     <button class="menubtn" id="menubtn" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav" aria-label="Principal"><a href="index.html">Início</a><a href="sobre.html">Sobre</a><a href="atendimento.html">Atendimento</a><a href="dicas.html">Dicas</a><a href="contato.html" aria-current=page>Contato</a>
-      <button class="fontbtn" id="fontbtn" aria-pressed="false" title="Aumentar o tamanho das letras">A+ Letra maior</button>
       <a class="navcta" href="https://wa.me/5521988644272?text=Ol%C3%A1%2C%20Mariana%21%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20atendimento." target="_blank" rel="noopener">Agendar conversa</a>
     </nav>
   </div>
@@ -81,7 +94,7 @@ if(first){r.classList.add("intro");document.addEventListener("DOMContentLoaded",
   var b=document.getElementById("menubtn"),n=document.getElementById("nav");
   b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o);b.textContent=o?"Fechar":"Menu"});
   var f=document.getElementById("fontbtn"),r=document.documentElement;
-  function sync(){var g=r.classList.contains("grande");f.setAttribute("aria-pressed",g);f.textContent=g?"A– Letra normal":"A+ Letra maior"}
+  function sync(){var g=r.classList.contains("grande");f.setAttribute("aria-pressed",g);f.querySelector(".fb-a").textContent=g?"A–":"A+";f.querySelector(".fb-l").textContent=g?" Letra normal":" Letra maior";f.title=g?"Voltar ao tamanho normal das letras":"Aumentar o tamanho das letras"}
   f.addEventListener("click",function(){r.classList.toggle("grande");try{localStorage.setItem("letra",r.classList.contains("grande")?"grande":"normal")}catch(e){}sync()});
   sync();
   var els=document.querySelectorAll(".reveal");
